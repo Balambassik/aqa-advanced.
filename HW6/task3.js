@@ -8,4 +8,4 @@ function checkOrder(available, ordered) {
     }
 }
 
-console.log(checkOrder(8, 11))
+console.log(checkOrder(8, 10))
