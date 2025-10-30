@@ -5,8 +5,8 @@
 // }
 // adultAge(25, 15)
 function adultAge(age) {
-    return (age >= 18)
+  return age >= 18;
 }
 
-console.log(adultAge(25))
-console.log(adultAge(15))
+console.log(adultAge(25));
+console.log(adultAge(15));

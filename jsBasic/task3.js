@@ -1,5 +1,5 @@
-const age = 23
-const adult = age >= 18
+const age = 23;
+const adult = age >= 18;
 
 console.log("Вік", age);
-console.log("Дорослий", adult)
+console.log("Дорослий", adult);

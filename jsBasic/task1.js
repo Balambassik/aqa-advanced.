@@ -1,12 +1,12 @@
-const strin = "Hello"
+const strin = "Hello";
 
-const nymber = 2
+const nymber = 2;
 
-const action = true
+const action = true;
 
-const nul = null
+const nul = null;
 
-let undef
+let undef;
 
 console.log("String", strin);
 console.log("Number", nymber);
