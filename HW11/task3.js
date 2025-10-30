@@ -1,22 +1,22 @@
-async function getToDo(id) {
+async function getToDo() {
     try {
         const response = await fetch(`https://jsonplaceholder.typicode.com/todos/1`)
         const todo = await response.json()
-    
+
         return todo
-    } catch(err) {
+    } catch (err) {
         console.log("Fetch error", err.message)
     }
 }
 
 
-async function getUser(id) {
+async function getUser() {
     try {
         const response = await fetch(`https://jsonplaceholder.typicode.com/users/1`)
         const user = await response.json()
 
         return user
-    } catch(err) {
+    } catch (err) {
         console.log("Fetch error", err.message)
     }
 }
@@ -26,9 +26,9 @@ async function getUser(id) {
 async function prom() {
     try {
         const [todo, user] = await Promise.all([getToDo(), getUser()])
-        console.log("Весь результат", {todo, user})
+        console.log("Весь результат", { todo, user })
 
-        const firstResult = await Promise.race([getToDo(),getUser()])
+        const firstResult = await Promise.race([getToDo(), getUser()])
         console.log("Перший", firstResult)
     } catch (err) {
         console.log("Помилка в Promises", err.message)

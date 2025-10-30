@@ -1,4 +1,4 @@
-import  Book  from './Book.js';
+import Book from './Book.js';
 
 export default class EBook extends Book {
     constructor(title, author, year, fileType) {
