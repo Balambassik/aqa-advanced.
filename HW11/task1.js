@@ -1,5 +1,5 @@
 function printWithWait(text, ms) {
-    setTimeout(() => console.log(text), ms)
+  setTimeout(() => console.log(text), ms);
 }
 
-printWithWait("Hello World!", 1000)
+printWithWait("Hello World!", 1000);
